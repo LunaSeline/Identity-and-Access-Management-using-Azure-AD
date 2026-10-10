@@ -472,15 +472,8 @@ This was built as a lab, so a few settings are deliberately simple. For anything
 - **Grant least privilege.** Delegate only the specific tasks needed (for example, *Reset user passwords* for a help desk, *Modify the membership of a group* for managers), never Domain Admin.
 - **Keep protection on OUs** (*Protect container from accidental deletion*) and link GPOs deliberately.
 
-## Cleanup
 
-Azure bills for a running VM. When the lab is finished, delete the resource group, which removes the VM, disk, network interface and public IP together:
-
-```bash
-az group delete --name glwipro27 --yes --no-wait
-```
-
-## Skills Demonstrated
+## Skills:
 
 - Azure resource group and virtual machine deployment
 - Windows Server 2022 administration over RDP
